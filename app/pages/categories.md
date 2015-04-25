@@ -1,0 +1,1 @@
+# Categories stub file
