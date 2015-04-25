@@ -1,1 +1,88 @@
 // Only global layout styles in this file.
+
+body {
+  @extend .bg-black;
+
+  > main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+// Styling all page layouts.
+[class^="page-"] {
+  min-height: 900px;
+}
+
+// Introduction page.
+.page-introduction {
+  
+
+  .city-livery {
+    height: 900px;
+    position: relative;
+    @include set-txt-color($color-text-body);
+    // @include background-image(linear-gradient(to bottom, $color-primary-dark, $black));
+    @include background-image(radial-gradient(circle at 50% 90%, $color-primary-dark 10%, $black 60%));
+
+    // Styling 3 different layers of stars.
+    > img[class^="stars"] {
+      position: absolute;
+      top: 0;
+
+      // Controlling layers individually...
+      &[class*="-high"] {
+        opacity: 0.51;
+      }
+      &[class*="-middle"] {
+        opacity: 0.62;
+      }
+      &[class*="-low"] {
+        opacity: 0.22;
+      }
+    }
+
+    .logo-container {
+      width: 45%;
+      margin: 0 auto;
+      padding-top: 200px;
+
+      .logo {
+        width: 100%;
+      }
+      .subtitle {
+        text-align: center;
+      }
+    }
+
+    .skyline-container {
+      width: 2400px;
+      position: absolute;
+      bottom: 0;
+      left: 0%;
+
+      .skyline {
+        width: 100%;
+
+      }
+    }
+  }
+}
+
+
+
+// Categories page.
+.page-categories {
+  @extend .bg-primary;
+}
+
+// Gallery page.
+.page-gallery {
+  @extend .bg-white;
+}
+
+// Contact page.
+.page-contact {
+  @extend .bg-accent;
+}
