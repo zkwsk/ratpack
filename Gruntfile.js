@@ -134,7 +134,9 @@ module.exports = function(grunt) {
 				options: {
 					port: 9000,
 					base: '<%= app %>/',
-					open: true,
+					open: {
+						appName: 'Google Chrome Canary'
+					},
 					livereload: true,
 					hostname: '127.0.0.1'
 				}
