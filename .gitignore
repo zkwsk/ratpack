@@ -3,4 +3,4 @@ node_modules
 app/bower_components
 app/css
 .sass-cache
-.html
+*.html
