@@ -4,3 +4,4 @@ app/bower_components
 app/css
 .sass-cache
 *.html
+dist
