@@ -24,7 +24,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		
 		jade: {
 			compile: {
 				options: {
@@ -36,7 +35,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: '<%= app %>/',
-					src: ['**/*.jade', '!**/header.jade', '!**/footer.jade'],
+					src: ['**/*.jade', '!**/templates/**'],
 					ext: '.html',
 					dest: '<%= app %>/'
 				}]
