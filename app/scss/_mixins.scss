@@ -1,0 +1,6 @@
+// Mixin to change color on all text elements.
+@mixin set-txt-color($color) {
+  a, p, span, h1, h2, h3, h4, h5 {
+    color: $color;
+  }
+}

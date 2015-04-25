@@ -18,28 +18,29 @@ $color-text-alternate: $black;
 
 // Background fills colors.
 .bg-accent {
-  color: $color-text-body;
+  @include set-txt-color($color-text-body);
   background-color: $color-accent;
 }
 .bg-primary {
-  color: $color-text-body;
+  @include set-txt-color($color-text-body);
   background-color: $color-primary;
 }
 .bg-primary-dark {
-  color: $color-text-body;
+  @include set-txt-color($color-text-body);
   background-color: $color-primary-dark;
 }
 .bg-black {
-  color: $color-text-body;
+  @include set-txt-color($color-text-body);
   background-color: $black;
 }
 .bg-white {
-  color: $color-text-alternate;
+  @include set-txt-color($color-text-alternate);
   background-color: $white;
 }
 
 // Gradients.
 .bg-gradient-dark {
-  color: $color-text-body;
+  @include set-txt-color($color-text-body);
   @include background-image(linear-gradient(to top, $color-primary, $black));
 }
+
