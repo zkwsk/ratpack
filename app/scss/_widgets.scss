@@ -1,1 +1,28 @@
 // Styling of individual modules/widgets in this file.
+
+.category-widgets {
+  img {
+    display:block;
+    margin:auto;
+  }
+  p {
+    text-align: justify;
+  }
+  blockquote {
+    border-left: none;
+  }
+  footer {
+    font-style: italic;
+    color: $color-text-body;
+    float: right;
+  }
+}
+
+.ornament {
+  z-index: 1;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background: transparent url("../images/ornament.png") no-repeat center center;
+  background-size: 100%;
+}

@@ -1,1 +1,1 @@
-# Categories stub file
+# Categories markdown file

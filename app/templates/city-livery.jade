@@ -2,9 +2,22 @@
   img.stars-high(src="images/stars_high.png", alt="stars")
   img.stars-middle(src="images/stars_middle.png", alt="stars")
   img.stars-low(src="images/stars_low.png", alt="stars")
-  .logo-container
-    img.logo(src="images/logo.svg", alt="logo")
-    h2.subtitle
-      icd "Autentiske bigbandoplevelser"
+  .row
+    .columns.small-8.small-centered
+      .logo-container
+        img.logo(src="images/logo.svg", alt="logo")
+        .spacer
+        h2.subtitle
+          i "Autentiske bigbandoplevelser"
+        .spacer
+      img.scroll(src="images/scroll.png", alt="scroll")
+      .spacer
+      h2.intro RATPACK + LINDY HOP
+      .columns.small-9.small-centered
+        .ornament
   .skyline-container
     img.skyline(src="images/skyline_long.svg", alt="skyline")
+  .row
+    .columns.small-8.small-centered.clearfix
+      .columns.small-12.intro-text
+        include:markdown ../pages/introduction.md
