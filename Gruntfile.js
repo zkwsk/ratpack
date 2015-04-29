@@ -117,11 +117,11 @@ module.exports = function(grunt) {
 				tasks: ['sass']
 			},
 			jade: {
-				files: '<%= app %>/**/*.jade',
+				files: ['<%= app %>/**/*.jade', '<%= app %>/templates/**/*.jade','<%= app %>/pages/**/*.md'],
 				tasks: ['jade']
 			},
 			livereload: {
-				files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}'],
+				files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}','<%= app %>/pages/**/*.md'],
 				options: {
 					livereload: true
 				}
