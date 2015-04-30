@@ -1,3 +1,3 @@
 High T Band er et alsidigt bigband der fokuserer på at spille swingende og autentisk dansemusik fra 1940’erne, 50’erne og 60’erne.
 
-Det 18 mand store orkester manøvrerer ubesværet farvandet mellem klassikere fra crooners som <strong>Frank Sinatra, Dean Martin og Sammy Davis Jr.</strong> Der kan også høres swingnumre, fra dengang jazz først og fremmest var dansemusik, og blev spillet af kunstnere som <strong>Gene Krupa, Count Basie og Duke Ellington</strong>, når High T Band går på scenen.
+Det 18 mand store orkester manøvrerer ubesværet farvandet mellem klassikere fra crooners som __Frank Sinatra, Dean Martin og Sammy Davis Jr.__ Der kan også høres swingnumre, fra dengang jazz først og fremmest var dansemusik, og blev spillet af kunstnere som __Gene Krupa, Count Basie og Duke Ellington__, når High T Band går på scenen.
