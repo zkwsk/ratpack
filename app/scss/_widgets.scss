@@ -5,9 +5,7 @@
     display:block;
     margin:auto;
   }
-  p {
-    text-align: justify;
-  }
+
   blockquote {
     border-left: none;
   }
@@ -25,4 +23,19 @@
   width: 100%;
   background: transparent url("../images/ornament.png") no-repeat center center;
   background-size: 100%;
+}
+
+.scroll {
+  position: fixed;
+  top:1em;
+  z-index: 1;
+  cursor:pointer;
+}
+
+.next {
+  left:1em;
+}
+
+.prev {
+  right:1em;
 }

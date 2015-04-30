@@ -1,1 +1,1 @@
-# Categories markdown file
+### Categories content goes here

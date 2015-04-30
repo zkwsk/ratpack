@@ -3,6 +3,7 @@
   "dependencies": {
     "foundation": "zurb/bower-foundation",
     "font-awesome": "~4.3.0",
-    "fittext": "*"
+    "fittext": "*",
+    "jquery.scrollTo": "~2.1.0"
   }
 }
