@@ -1,7 +1,55 @@
+@font-face {
+  font-family: 'Lovelo Black';
+  src: url('../fonts/Lovelo_Black.woff2') format('woff2'),
+       url('../fonts/Lovelo_Black.woff') format('woff'),
+       url('../fonts/Lovelo_Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lovelo Line Bold';
+  src: url('../fonts/Lovelo_Line_Bold.woff2') format('woff2'),
+       url('../fonts/Lovelo_Line_Bold.woff') format('woff'),
+       url('../fonts/Lovelo_Line_Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Lovelo Line Light';
+  src: url('../fonts/Lovelo_Line_Light.woff2') format('woff2'),
+       url('../fonts/Lovelo_Line_Light.woff') format('woff'),
+       url('../fonts/Lovelo_Line_Light.ttf') format('truetype');
+}
+
+// Playfair
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+       url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display Italic';
+  src: url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+       url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
+       url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+}
+
+
 body {
+  font-family: 'Playfair Display';
   font-size: 18px;
+  strong {
+    font-family: 'Lovelo Black';
+  }
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: 'Lovelo Black';
   text-align: center;
+}
+
+h2.subtitle {
+  font-family: 'Playfair Display Italic';
 }
