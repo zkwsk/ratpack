@@ -15,3 +15,10 @@ __Homepage for the high T big band__
 ##Jade
 
 * To insert HTML snippets in jade, use the converter at: http://html2jade.aaron-powell.com or use a Sublime tool if available.
+
+##Some of the cool things you can do with the Grunt-setup 
+
+###Refer to ```grunt --help```
+
+* ```grunt publish``` : __BUILD__ the project - results in a heavily optimized production ready site.
+* ```grunt server-dist```: __SERVE__ the build!!! (@ port 9001)
