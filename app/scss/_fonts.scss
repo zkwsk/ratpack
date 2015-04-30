@@ -45,10 +45,17 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
+  text-align: center;
+  font-size: 5.4em;
+  font-family: 'Lovelo Line Light', sans-serif;
+}
+
+h2, h3, h4, h5 {
   font-family: 'Lovelo Black';
   text-align: center;
 }
+
 
 h2.subtitle {
   font-family: 'Playfair Display Italic';

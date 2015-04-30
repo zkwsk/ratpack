@@ -10,10 +10,6 @@ body {
   }
 }
 
-.spacer {
-  height: 35px;
-}
-
 // Styling all page layouts.
 [class^="page-"] {
   min-height: 900px;
@@ -23,11 +19,11 @@ body {
 .page-introduction {
 
   .city-livery {
-    height: 1230px;
+    height: 900px;
     position: relative;
     @include set-txt-color($color-text-body);
     // @include background-image(linear-gradient(to bottom, $color-primary-dark, $black));
-    // @include background-image(radial-gradient(circle at 50% 90%, $color-primary-dark 10%, $black 60%));
+    @include background-image(radial-gradient(circle at 50% 90%, $color-primary-dark 10%, lighten($black, 15%)  ));
 
     .scroll {
       display: block;
