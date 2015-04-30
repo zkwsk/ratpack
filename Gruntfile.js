@@ -157,6 +157,7 @@ module.exports = function(grunt) {
 				src: [
 					'<%= app %>/**/*.jade'
 				],
+				ignorePath: '../',
 				exclude: [
 					'modernizr',
 					'font-awesome',
