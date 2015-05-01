@@ -2,9 +2,9 @@
 
 $(function(){
     var next;
-    jQuery('.next').click(function() {
+    $('.next').click(function() {
         if (next === undefined) {
-            next = jQuery('[class^="page-"]').next();
+            next = $('[class^="page-"]').next();
         } else {
             if (prev === undefined) {
                 next = next.next();
@@ -13,15 +13,15 @@ $(function(){
                     prev = undefined;
             }
         }
-        jQuery('body').scrollTo(next, 800);
+        $('body').scrollTo(next, 800);
     });
 
 
     var prev;
-    jQuery('.prev').click(function() {
+    $('.prev').click(function() {
         if (prev === undefined) {
             if (next === undefined) {
-                prev = jQuery('[class^="page-"]').prev();
+                prev = $('[class^="page-"]').prev();
             } else {
                 prev = next.prev();
             }
@@ -29,6 +29,6 @@ $(function(){
         } else {
             prev = prev.prev();
         }
-        jQuery('body').scrollTo(prev, 800);
+        $('body').scrollTo(prev, 800);
     });
-})();
+});
