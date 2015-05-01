@@ -26,17 +26,21 @@
 }
 
 .scroll {
-  position: fixed;
-  z-index: 1;
+  position: relative;
   cursor:pointer;
 }
 
 .next {
+  position: fixed;
+  z-index: 10;
   top:10em;
   right:1em;
 }
 
 .prev {
+  position: fixed;
+  z-index: 10;
   top:1em;
   right:1em;
 }
+
