@@ -33,15 +33,15 @@
 .next {
   position: fixed;
   z-index: 100;
-  top:10em;
-  left:1em;
+  bottom:1em;
+  right:1em;
 }
 
 .prev {
   position: fixed;
   z-index: 100;
-  top:1em;
-  left:1em;
+  bottom:10em;
+  right:1em;
 }
 
 
