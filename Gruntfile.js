@@ -10,6 +10,14 @@ module.exports = function(grunt) {
 		app: 'app',
 		dist: 'dist',
 
+		favicons: {
+		  options: {},
+		  icons: {
+		    src: '<%= app %>/images/logo.png',
+		    dest: '<%= dist %>/images'
+		  }
+		},
+
 		sass: {
 			dist: {
 				options: {
@@ -170,6 +178,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('compile-jade', ['jade']);
+	grunt.loadNpmTasks('grunt-favicons');
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
@@ -177,6 +186,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	
-	grunt.registerTask('publish', ['compile-jade', 'compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-jade', 'compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin', 'favicons']);
 
 };
