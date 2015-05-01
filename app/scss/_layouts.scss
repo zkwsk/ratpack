@@ -19,8 +19,10 @@ body {
 .page-introduction {
 
   .city-livery {
+    overflow: hidden;
     height: 900px;
     position: relative;
+    z-index: -2;
     @include set-txt-color($color-text-body);
     // @include background-image(linear-gradient(to bottom, $color-primary-dark, $black));
     @include background-image(radial-gradient(circle at 50% 90%, $color-primary-dark 10%, lighten($black, 15%)  ));
@@ -70,7 +72,7 @@ body {
       position: absolute;
       bottom: 0;
       left: 0;
-
+      z-index: -1;
       .skyline {
         width: 100%;
 

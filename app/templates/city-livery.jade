@@ -3,7 +3,7 @@
   img.stars-middle(src="images/stars_middle.png", alt="stars")
   img.stars-low(src="images/stars_low.png", alt="stars")
   .row
-    .columns.small-8.small-centered
+    .columns.small-9.small-centered
       .logo-container
         img.logo(src="images/logo.svg", alt="logo")
         h2.subtitle
@@ -11,12 +11,10 @@
       img.hide-for-small-only.next.scroll(src="images/scroll.png", alt="scroll")
       img.hide-for-small-only.prev.scroll(src="images/scroll-up.png", alt="scroll")
       h2.intro RATPACK + LINDY HOP
-      .columns.small-9.small-centered
+      .columns.small-7.small-centered
         .ornament
+      .intro-text
+        include:markdown ../pages/introduction.md
   .skyline-container
     img.skyline(src="images/skyline_long.svg", alt="skyline")
-  .row
-    .columns.small-8.small-centered.clearfix
-      .columns.small-12.intro-text
-        include:markdown ../pages/introduction.md
 
