@@ -1,0 +1,13 @@
+#freewall {
+    height: 350px!important;
+    width: 90%;
+    margin: 0 auto;
+    .brick img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    .brick .red {
+        background:red;
+        width: 100%;
+    }
+}
