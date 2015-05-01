@@ -137,7 +137,7 @@ module.exports = function(grunt) {
 						appName: 'Google Chrome Canary'
 					},
 					livereload: true,
-					hostname: '127.0.0.1'
+					hostname: '*'
 				}
 			},
 			dist: {
@@ -147,7 +147,7 @@ module.exports = function(grunt) {
 					open: true,
 					keepalive: true,
 					livereload: false,
-					hostname: '127.0.0.1'
+					hostname: '*'
 				}
 			}
 		},
