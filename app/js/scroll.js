@@ -31,4 +31,13 @@ $(function(){
         }
         $('body').scrollTo(prev, 800);
     });
+
+    //menu
+    var sel;
+    $('.top-bar-section a').click(function(){
+    sel =  $($(this).attr('data'));
+    console.log(sel);
+        $('body').scrollTo( sel, 800 );
+    });
+
 });

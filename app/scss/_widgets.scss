@@ -32,15 +32,23 @@
 
 .next {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top:10em;
-  right:1em;
+  left:1em;
 }
 
 .prev {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top:1em;
-  right:1em;
+  left:1em;
 }
 
+
+.top-bar .name a { color: $white !important; }
+.top-bar { background: $black; @include opacity(0.8); }
+.contain-to-grid { background: $black; }
+.top-bar ul li a { color: $white; background: $black !important; font-family: "Lovelo Black", Arial, sans-serif;}
+.top-bar-section ul li.active > a { background: $black !important; }
+.top-bar-section ul li.active > a:hover { color: $white !important; background:#21c5ed !important; }
+.top-bar-section li a:not(.button):hover { color: $white; background:$nileblue !important; }
