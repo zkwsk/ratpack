@@ -29,6 +29,7 @@
     "grunt-usemin": "~3.0.0",
     "grunt-contrib-imagemin": "0.9.3",
     "grunt-newer": "~1.1.0",
-    "grunt-favicons": "~0.7.0"
+    "grunt-favicons": "~0.7.0",
+    "grunt-lint5": "~0.3.1"
   }
 }

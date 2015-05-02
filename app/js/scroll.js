@@ -37,7 +37,7 @@ $(function(){
     var sel;
     var offset;
     $('.top-bar-section a').click(function(){
-    sel =  $($(this).attr('data'));
+    sel =  $($(this).attr('data-link'));
     console.log(Foundation.utils.is_small_only());
     offset = Foundation.utils.is_small_only() ? -263 : 0;
         $('body').scrollTo( sel, 800, { offset: offset });
