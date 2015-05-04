@@ -176,20 +176,20 @@ module.exports = function(grunt) {
 		},
 
 		lint5: {
-			dirPath : "<%= app %>/",
+			dirPath : '<%= app %>/',
 		  default: {
 		    // if you have used nunjucks and wanted to pass defaults value to the objects 
 		    // for example: 
-		    "email": "a@a.com",
-		    "username": "abcd"
+		    'email': 'a@a.com',
+		    'username': 'abcd'
 		  },
 		  templates: [
-		    "index.html"
+		    'index.html'
 		  ],
 		  ignoreList: [
 		    // the format of ignoreList is in the array format 
-		    "message to be ignored",
-		    "another message"
+		    'message to be ignored',
+		    'another message'
 		    // you can simply copy the message you got from the returned on the console 
 		    //for example this 
 		    // 'Bad value “” for attribute “action” on element “form”: Must be non-empty.'
@@ -198,7 +198,7 @@ module.exports = function(grunt) {
 
 	});
 	
-	grunt.loadNpmTasks( "grunt-lint5" );
+	grunt.loadNpmTasks('grunt-lint5');
 	grunt.registerTask('compile-jade', ['jade']);
 	grunt.registerTask('lint-html', ['jade', 'lint5']);
 	grunt.loadNpmTasks('grunt-favicons');
