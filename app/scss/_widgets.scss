@@ -52,7 +52,7 @@
   height: 100px;
   width: 100%;
   top: -40px;
-  @include transform(skew(0, 3deg));
+  @include transform(skew(0, -2deg));
 }
 
 
