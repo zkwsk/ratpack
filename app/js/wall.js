@@ -1,34 +1,37 @@
 'use strict';
 /* global freewall*/
 
-$(function(){
+var colour = [
+  "rgb(142, 68, 173)",
+  "rgb(243, 156, 18)",
+  "rgb(211, 84, 0)",
+  "rgb(0, 106, 63)",
+  "rgb(41, 128, 185)",
+  "rgb(192, 57, 43)",
+  "rgb(135, 0, 0)",
+  "rgb(39, 174, 96)"
+];
 
-  var temp = '<div class="brick" style="width:{width}px;"><img src="/images/band/{index}.jpg" width="100%"></div>';
-  var w = 1, html = '', limitItem = 8;
-  for (var i = 0; i < limitItem; ++i) {
-    w = 1 + 3 * Math.random() << 0;
-    html += temp.replace(/\{width\}/g, w*200).replace('{index}', i + 1);
-  }
+$(".free-wall .item").each(function() {
+  var backgroundColor = colour[colour.length * Math.random() << 0];
+  $(this).css({
+    backgroundColor: backgroundColor
+  });
+});
 
-  $('#freewall').html(html);
-  
-  var wall = new freewall('#freewall');
+$(function() {
+  var wall = new freewall("#freewall");
   wall.reset({
-    animate: true,
-    selector: '.brick',
-    gutterX: 7,
-    gutterY: 7,
-    cellW: '230',
-    cellH: 'auto',
+    selector: '.level1',
+    cellW: 320,
+    cellH: 160,
+    fixSize: 0,
+    gutterX: 20,
+    gutterY: 10,
     onResize: function() {
       wall.fitZone();
-      wall.fillHoles();
     }
   });
-
-  var images = wall.container.find('.brick');
-  images.find('img').load(function() {
-    wall.fitZone();
-    wall.fillHoles();
-  });
+  wall.fitZone();
+  $(window).trigger("resize");
 });
