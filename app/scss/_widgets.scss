@@ -1,6 +1,6 @@
 // Styling of individual modules/widgets in this file.
 
-.category-widgets {
+.category-widget {
   img {
     display:block;
     margin:auto;
@@ -14,6 +14,8 @@
     color: $color-text-body;
     float: right;
   }
+
+  margin-bottom: 100px;
 }
 
 .ornament {
@@ -42,6 +44,15 @@
   z-index: 100;
   bottom:10em;
   right:1em;
+}
+
+.skew {
+  position: absolute;
+  background-color:inherit;
+  height: 100px;
+  width: 100%;
+  top: -40px;
+  @include transform(skew(0, 3deg));
 }
 
 

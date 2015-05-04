@@ -13,6 +13,8 @@ body {
 // Styling all page layouts.
 [class^="page-"] {
   min-height: 900px;
+  position: relative;
+  padding-bottom: 50px;
 }
 
 // Introduction page.
@@ -92,7 +94,11 @@ body {
   @extend .bg-white;
 }
 
-// Contact page.
+// Repertoire page.
+.page-repertoire {
+  @extend .bg-black;
+}
+
 .page-contact {
   @extend .bg-accent;
 }
