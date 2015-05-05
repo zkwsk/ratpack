@@ -17,3 +17,23 @@
 .size2-2 {
   line-height: 85px;
 }
+
+
+[class^="band-"] {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+$i: 8;
+@while $i > 0 {
+  .band-#{$i} { background:transparent url('/images/band/#{$i}.jpg');}
+  $i: $i - 1;
+}
+
+#freewall {
+  h1,h2,h3,h4,h5,p {
+    color: white;
+  }
+}

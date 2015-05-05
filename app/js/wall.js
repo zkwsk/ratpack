@@ -1,22 +1,17 @@
 'use strict';
 /* global freewall*/
 
+
 var colour = [
-  "rgb(142, 68, 173)",
-  "rgb(243, 156, 18)",
-  "rgb(211, 84, 0)",
-  "rgb(0, 106, 63)",
-  "rgb(41, 128, 185)",
-  "rgb(192, 57, 43)",
-  "rgb(135, 0, 0)",
-  "rgb(39, 174, 96)"
+  "bg-accent",
+  "bg-primary",
+  "bg-primary-dark",
+  "bg-black"
 ];
 
 $(".free-wall .item").each(function() {
-  var backgroundColor = colour[colour.length * Math.random() << 0];
-  $(this).css({
-    backgroundColor: backgroundColor
-  });
+  var colorSet = colour[colour.length * Math.random() << 0];
+  $(this).addClass(colorSet);
 });
 
 $(function() {
@@ -35,3 +30,4 @@ $(function() {
   wall.fitZone();
   $(window).trigger("resize");
 });
+
