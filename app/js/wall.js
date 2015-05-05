@@ -3,15 +3,15 @@
 
 
 var colour = [
-  "bg-accent",
-  "bg-primary",
+  // "bg-accent",
+  // "bg-primary",
   "bg-primary-dark",
-  "bg-black"
+  // "bg-black"
 ];
-
+var index = 1;
 $(".free-wall .item").each(function() {
   var colorSet = colour[colour.length * Math.random() << 0];
-  $(this).addClass(colorSet);
+  $(this).addClass(colorSet)//.append($('<h3>' + index++ + '</h3>'));
 });
 
 $(function() {

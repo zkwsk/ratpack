@@ -26,11 +26,29 @@
   display: block;
 }
 
-$i: 8;
-@while $i > 0 {
-  .band-#{$i} { background:transparent url('/images/band/#{$i}.jpg');}
-  $i: $i - 1;
+$tile-list: "1x1-1" "2x1-1" "2x1-2" "2x1-3" "2x2-1" "2x2-2";
+
+@each $current-tile in $tile-list {
+    $i: index($tile-list, $current-tile);
+    .tile-#{$current-tile} {
+      background:transparent url('/images/band/#{$current-tile}.png');
+    }
 }
+
+[tile^="band-"] {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
+// $i: 8;
+// @while $i > 0 {
+//   .band-#{$i} { background:transparent url('/images/band/#{$i}.jpg');}
+//   $i: $i - 1;
+// }
 
 #freewall {
   h1,h2,h3,h4,h5,p {
