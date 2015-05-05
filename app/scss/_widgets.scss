@@ -26,6 +26,10 @@
   background: transparent url("../images/ornament.png") no-repeat center center;
   background-size: 100%;
 }
+.ornament-dark {
+  @extend .ornament;
+  background: transparent url("../images/ornament-dark.png") no-repeat center center;
+}
 
 .scroll {
   position: relative;

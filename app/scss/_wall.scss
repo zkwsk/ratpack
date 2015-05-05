@@ -19,26 +19,25 @@
 }
 
 
-[class^="band-"] {
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-$tile-list: "1x1-1" "2x1-1" "2x1-2" "2x1-3" "2x2-1" "2x2-2";
+$tile-list: "1x2-singer1" "1x2-singer2" "2x1-alto1" "2x1-sheetmusic" "2x1-singer1" "2x1-tromboner1" "2x1-trompeter1" "2x1-trompeter2" "2x1-trompeter3" "2x1-trompeter4" "square-alto1" "square-alto2" "square-alto3" "square-bari1" "square-bass-trombone" "square-drummer" "square-drummer2" "square-guitar1" "square-guitar2" "square-guitar3" "square-guitar4" "square-saxes1" "square-singer1" "square-singer2" "square-tenor" "square-tenor2" "square-tenor3";
 
 @each $current-tile in $tile-list {
-    $i: index($tile-list, $current-tile);
     .tile-#{$current-tile} {
-      background:transparent url('/images/band/#{$current-tile}.png');
+      background:transparent url('/images/tiles/#{$current-tile}.jpg');
     }
 }
 
-[tile^="band-"] {
+// $hover-tile-list: "1x2-singer2" "1x2-singer1" "2x1-alto1" "2x1-sheetmusic" "2x1-singer1" "2x1-tromboner1" "2x1-trompeter4" "2x1-trompeter1" "2x1-trompeter2" "2x1-trompeter3" "square-alto3" "square-alto1" "square-alto2" "square-bari1" "square-bass-trombone" "square-drummer2" "square-drummer1" "square-guitar4" "square-guitar1" "square-guitar2" "square-guitar3" "square-saxes1" "square-singer2" "square-singer1" "square-tenor3" "square-tenor" "square-tenor2";
+
+// @each $current-tile in $hover-tile-list {
+//     .tile-#{$current-tile}:hover {
+//       background:transparent url('/images/tiles/#{$current-tile}.jpg');
+//     }
+// }
+
+[class^="tile-"] {
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   display: block;
 }
 
