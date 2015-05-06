@@ -1,19 +1,6 @@
 'use strict';
 /* global freewall*/
 
-
-// var colour = [
-//   "bg-accent",
-//   "bg-primary",
-//   "bg-primary-dark",
-//   "bg-black"
-// ];
-// var index = 1;
-// $(".free-wall .item").each(function() {
-//   var colorSet = colour[colour.length * Math.random() << 0];
-//   $(this).addClass(colorSet)//.append($('<h3>' + index++ + '</h3>'));
-// });
-
 $(function() {
   var wall = new freewall('#freewall');
 
@@ -29,4 +16,36 @@ $(function() {
     }
   });
   wall.fitZone();
+
+  $.fn.random = function() {
+      var randomIndex = Math.floor(Math.random() * this.length);  
+      return $(this[randomIndex]);
+  };
+
+  jQuery.fn.swapWith = function(to) {
+      return this.each(function() {
+          var copy_to = $(to).clone(true);
+          var copy_from = $(this).clone(true);
+          $(to).replaceWith(copy_from);
+          $(this).replaceWith(copy_to);
+      });
+  };
+
+  function swap_images() {
+    var $i = $('[class*=square]');
+    $i.click(function(){
+      var $this = $(this);
+      var $rand = $i.not($this).random();
+      $this.swapWith($rand);
+      console.log($this);
+      console.log($rand);
+      $i = $('[class*=square]');
+    });
+
+    // setTimeout(toggle_wall, 2000 );
+  }
+
+  swap_images();
+
+
 });
