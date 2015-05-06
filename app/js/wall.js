@@ -31,18 +31,17 @@ $(function() {
       });
   };
 
+
   function swap_images() {
     var $i = $('[class*=square]');
-    $i.click(function(){
-      var $this = $(this);
-      var $rand = $i.not($this).random();
-      $this.swapWith($rand);
-      console.log($this);
-      console.log($rand);
-      $i = $('[class*=square]');
-    });
 
-    // setTimeout(toggle_wall, 2000 );
+    var $this = $i.random();
+    var $rand = $i.not($this).random();
+    $this.swapWith($rand);
+    $i = $('[class*=square]');
+
+
+    setTimeout(swap_images, 750 );
   }
 
   swap_images();
