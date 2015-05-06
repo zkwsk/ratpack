@@ -91,12 +91,12 @@ body {
 
 // Gallery page.
 .page-gallery {
-  @extend .bg-white;
+  @extend .bg-black;
 }
 
 // Repertoire page.
 .page-repertoire {
-  @extend .bg-black;
+  @extend .bg-white;
 }
 
 .page-contact {
