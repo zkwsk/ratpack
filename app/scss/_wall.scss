@@ -27,14 +27,6 @@ $tile-list: "1x2-singer1" "1x2-singer2" "2x1-alto1" "2x1-sheetmusic" "2x1-singer
     }
 }
 
-// $hover-tile-list: "1x2-singer2" "1x2-singer1" "2x1-alto1" "2x1-sheetmusic" "2x1-singer1" "2x1-tromboner1" "2x1-trompeter4" "2x1-trompeter1" "2x1-trompeter2" "2x1-trompeter3" "square-alto3" "square-alto1" "square-alto2" "square-bari1" "square-bass-trombone" "square-drummer2" "square-drummer1" "square-guitar4" "square-guitar1" "square-guitar2" "square-guitar3" "square-saxes1" "square-singer2" "square-singer1" "square-tenor3" "square-tenor" "square-tenor2";
-
-// @each $current-tile in $hover-tile-list {
-//     .tile-#{$current-tile}:hover {
-//       background:transparent url('/images/tiles/#{$current-tile}.jpg');
-//     }
-// }
-
 [class^="tile-"] {
   background-size: cover;
   width: 100%; height: 100%;
@@ -42,15 +34,17 @@ $tile-list: "1x2-singer1" "1x2-singer2" "2x1-alto1" "2x1-sheetmusic" "2x1-singer
 }
 
 
-
-// $i: 8;
-// @while $i > 0 {
-//   .band-#{$i} { background:transparent url('/images/band/#{$i}.jpg');}
-//   $i: $i - 1;
-// }
-
 #freewall {
   h1,h2,h3,h4,h5,p {
     color: white;
   }
+}
+
+#load {
+  z-index: 2;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  
 }

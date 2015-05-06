@@ -16,7 +16,6 @@
 
 $(function() {
   var wall = new freewall('#freewall');
-  var filename;
 
   wall.reset({
     selector: '.level1',
@@ -30,15 +29,4 @@ $(function() {
     }
   });
   wall.fitZone();
-  $(window).trigger('resize');
-
-  // var $this;
-  // $('i').each(function(){
-  //   $this = $(this);
-  //   filename = ($this.attr('class') + '.jpg').replace('tile-','');
-  //   $this.wrap('<a href="/images/tiles/large/' + filename + '"></a>');
-  // });
 });
-
-
-
