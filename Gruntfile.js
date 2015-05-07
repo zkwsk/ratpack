@@ -11,7 +11,10 @@ module.exports = function(grunt) {
 		dist: 'dist',
 
 		favicons: {
-		  options: {},
+		  options: {
+		  	apple: true,
+		  	appleTouchPadding: 0,
+		  },
 		  icons: {
 		    src: '<%= app %>/images/logo.png',
 		    dest: '<%= dist %>/images'
