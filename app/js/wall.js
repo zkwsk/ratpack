@@ -22,29 +22,29 @@ $(function() {
       return $(this[randomIndex]);
   };
 
-  jQuery.fn.swapWith = function(to) {
-      return this.each(function() {
-          var copy_to = $(to).clone(true);
-          var copy_from = $(this).clone(true);
-          $(to).replaceWith(copy_from);
-          $(this).replaceWith(copy_to);
-      });
-  };
+  // jQuery.fn.swapWith = function(to) {
+  //     return this.each(function() {
+  //         var copy_to = $(to).clone(true);
+  //         var copy_from = $(this).clone(true);
+  //         $(to).replaceWith(copy_from);
+  //         $(this).replaceWith(copy_to);
+  //     });
+  // };
 
 
-  function swap_images() {
-    var $i = $('[class*=square]');
+  // function swap_images() {
+  //   var $i = $('[class*=square]');
 
-    var $this = $i.random();
-    var $rand = $i.not($this).random();
-    $this.swapWith($rand);
-    $i = $('[class*=square]');
+  //   var $this = $i.random();
+  //   var $rand = $i.not($this).random();
+  //   $this.swapWith($rand);
+  //   $i = $('[class*=square]');
 
 
-    setTimeout(swap_images, 750 );
-  }
+  //   setTimeout(swap_images, 750 );
+  // }
 
-  swap_images();
+  // swap_images();
 
 
 });
