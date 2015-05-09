@@ -46,5 +46,11 @@ $(function() {
 
   // swap_images();
 
-
+  $(".fancybox").fancybox({
+      helpers:  {
+          title : {
+              type : 'inside'
+          }
+      }
+  });
 });
