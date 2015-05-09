@@ -3,11 +3,7 @@
 @import "compass/css3";
 @import "compass/utilities";
 @import "fonts";
-
-body.alternate-theme-0 {
-
-
-
+body.alternate-theme-0 {  
   @import "palette";
   @import "mixins";
   @import "colors";
@@ -20,11 +16,7 @@ body.alternate-theme-0 {
   
 }
 
-
-body.alternate-theme-1 {
-
-
-
+body.alternate-theme-1 {  
   @import "mixins";
   @import "generated-colors01";
   @import "alternate-colors";
@@ -37,10 +29,8 @@ body.alternate-theme-1 {
   
 }
 
-body.alternate-theme-2 {
 
-
-
+body.alternate-theme-2 {  
   @import "mixins";
   @import "generated-colors02";
   @import "alternate-colors";
@@ -53,10 +43,8 @@ body.alternate-theme-2 {
   
 }
 
-body.alternate-theme-3 {
 
-
-
+body.alternate-theme-3 {  
   @import "mixins";
   @import "generated-colors03";
   @import "alternate-colors";
@@ -69,10 +57,8 @@ body.alternate-theme-3 {
   
 }
 
-body.alternate-theme-4 {
 
-
-
+body.alternate-theme-4 {  
   @import "mixins";
   @import "generated-colors04";
   @import "alternate-colors";
@@ -85,10 +71,8 @@ body.alternate-theme-4 {
   
 }
 
-body.alternate-theme-5 {
 
-
-
+body.alternate-theme-5 {  
   @import "mixins";
   @import "generated-colors05";
   @import "alternate-colors";
