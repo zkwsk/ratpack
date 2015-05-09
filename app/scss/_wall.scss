@@ -30,7 +30,7 @@
 }
 
 
-$tile-list: "1x2-singer1" "1x2-singer2" "2x1-alto1" "2x1-sheetmusic" "2x1-singer1" "2x1-tromboner1" "2x1-trompeter1" "2x1-trompeter2" "2x1-trompeter3" "2x1-trompeter4" "square-alto1" "square-alto2" "square-alto3" "square-bari1" "square-bass-trombone" "square-drummer" "square-drummer2" "square-guitar1" "square-guitar2" "square-guitar3" "square-guitar4" "square-saxes1" "square-singer1" "square-singer2" "square-tenor" "square-tenor2" "square-tenor3";
+$tile-list: "1x2-bass1" "1x2-singer1" "1x2-singer2" "2x1-alto1" "2x1-sheetmusic" "2x1-singer1" "2x1-tromboner1" "2x1-trompeter1" "2x1-trompeter2" "2x1-trompeter3" "2x1-trompeter4" "square-alto1" "square-alto2" "square-alto3" "square-bari1" "square-bass-trombone" "square-drummer" "square-drummer2" "square-guitar1" "square-guitar2" "square-guitar3" "square-guitar4" "square-saxes1" "square-singer1" "square-singer2" "square-tenor" "square-tenor2" "square-tenor3";
 
 @each $current-tile in $tile-list {
     .tile-#{$current-tile} {

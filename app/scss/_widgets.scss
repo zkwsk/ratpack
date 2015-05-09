@@ -50,7 +50,8 @@
   right:1em;
 }
 
-.skew {
+
+[class^='page-'] .skew {
   padding-top: 100px;
   position: absolute;
   background-color:inherit;
