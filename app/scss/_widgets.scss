@@ -38,14 +38,14 @@
 
 .next {
   position: fixed;
-  z-index: 100;
+  z-index: -100;
   bottom:1em;
   right:1em;
 }
 
 .prev {
   position: fixed;
-  z-index: 100;
+  z-index: -100;
   bottom:10em;
   right:1em;
 }

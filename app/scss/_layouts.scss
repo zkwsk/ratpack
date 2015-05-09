@@ -25,7 +25,7 @@ body {
     overflow: hidden;
     height: 900px;
     position: relative;
-    z-index: -2;
+    z-index: 0;
     @include set-txt-color($color-text-body);
     // @include background-image(linear-gradient(to bottom, $color-primary-dark, $black));
     @include background-image(radial-gradient(circle at 50% 90%, $color-primary-dark 10%, lighten($black, 15%)  ));

@@ -1,5 +1,15 @@
 .page-contact
   .skew
-  br
-  br
-  h2 Contact
+  .row
+    .colums.small-12.small-centered
+      br
+      br
+      h2 Kontakt
+      .columns.small-centered.small-12.text-center
+        h2 BESKED TIL HIGH T
+        i.fa.fa-hand-o-down.fa-3x.dark
+        br
+        a(class="" href='#', data-reveal-id='myModal')
+          i.fa.fa-envelope.fa-5x
+          #myModal.reveal-modal(data-reveal='', aria-labelledby='modalTitle', aria-hidden='true', role='dialog')
+            include foxy-form.html

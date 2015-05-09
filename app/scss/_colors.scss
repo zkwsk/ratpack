@@ -37,3 +37,11 @@ $color-text-alternate: $black;
   @include set-txt-color($color-text-alternate);
   background-color: $white;
 }
+
+.dark {
+  color: $color-primary-dark!important;
+}
+
+.red {
+  color: $red;
+}

@@ -36,7 +36,7 @@ $(function(){
     //menu
     var sel;
     var offset;
-    $('.top-bar-section a').click(function(){
+    $('.top-bar a, a link').click(function(){
     sel =  $($(this).attr('data-link'));
     console.log(Foundation.utils.is_small_only());
     offset = Foundation.utils.is_small_only() ? -263 : 0;
