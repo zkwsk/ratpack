@@ -51,9 +51,17 @@ $(function() {
   $.each($i, function(index, item){
     var $item = $(item);
     var $filename = $item.attr('class').replace('tile-','');
-    var $title = $item.find('.text-bottom > *').text()
+    var $title = $item.find('.text-bottom > *').text();
     $item.wrap('<a rel="band" href="/images/tiles/large/' + $filename + '.jpg" class="fancybox" title="' + $title  + '"></a>');
   });
 
-  $('.fancybox').fancybox();
+  $('.fancybox').fancybox({
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    }
+  });
+
+
 });
