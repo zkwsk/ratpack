@@ -1,4 +1,19 @@
+/* all app scss styles here */
+
+@import "compass/css3";
+@import "compass/utilities";
+
+// Custom import statements here.
+@import "mixins";
+
 // Color declarations goes here.
+
+$red: $generated-color-1;
+$nileblue: $generated-color-2;
+$blackcurrant: $generated-color-3;
+$black: $generated-color-4;
+$white: $generated-color-5;
+
 
 // Color variable assignments.
 $color-accent: $red;

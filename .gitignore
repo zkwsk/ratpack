@@ -5,3 +5,4 @@ app/css
 .sass-cache
 *.html
 dist
+app/scss/_generated-colors.scss
