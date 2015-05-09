@@ -46,11 +46,14 @@ $(function() {
 
   // swap_images();
 
-  $(".fancybox").fancybox({
-      helpers:  {
-          title : {
-              type : 'inside'
-          }
-      }
+  var $i = $('#freewall i');
+
+  $.each($i, function(index, item){
+    var $item = $(item);
+    var $filename = $item.attr('class').replace('tile-','');
+    var $title = $item.attr('title');
+    $item.wrap('<a rel="band" href="/images/tiles/large/' + $filename + '.jpg" class="fancybox" title=' + $title  + '></a>');
   });
+
+  $('.fancybox').fancybox();
 });
