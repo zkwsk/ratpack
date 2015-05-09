@@ -38,14 +38,14 @@
 
 .next {
   position: fixed;
-  z-index: -100;
+  z-index: 10;
   bottom:1em;
   right:1em;
 }
 
 .prev {
   position: fixed;
-  z-index: -100;
+  z-index: 10;
   bottom:10em;
   right:1em;
 }
@@ -81,3 +81,5 @@
 .top-bar-section ul li.active > a { background: $black !important; }
 .top-bar-section ul li.active > a:hover { color: $white !important; background:#21c5ed !important; }
 .top-bar-section li a:not(.button):hover { color: $white; background:$nileblue !important; }
+
+
