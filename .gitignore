@@ -6,3 +6,4 @@ app/css
 *.html
 dist
 app/scss/_generated-colors.scss
+scratch.css
