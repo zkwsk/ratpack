@@ -53,8 +53,18 @@ h1 {
 
 
 h2, h3, h4, h5 {
-  font-family: 'Lovelo Black';
+  font-family: 'Playfair Display Italic';
   text-align: center;
+}
+
+h2.intro {
+  font-family: 'Lovelo Black';
+}
+
+.page-gallery .free-wall {
+  h2, h3, h4, h5, h6 {
+    font-family: 'Lovelo Black';
+  }
 }
 
 
@@ -63,7 +73,7 @@ h2.subtitle {
 }
 
 .send-mail,
-.fancybox-title-inside-wrap {
+.fancybox-title {
   font-family: 'Playfair Display Italic';
   
 }

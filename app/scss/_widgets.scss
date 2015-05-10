@@ -62,6 +62,7 @@
 }
 
 .fade-white {
+  color: $white!important;
   /* First we need to help some browsers along for this to work.
      Just because a vendor prefix is there, doesn't mean it will
      work in a browser made by that vendor either, it's just for
@@ -73,7 +74,7 @@
   /* ...and now for the proper property */
   transition:.3s;
 }
-.fade-white:hover { color:$nileblue; }
+.fade-white:hover { color:$black!important; }
 
 .top-bar .name a { color: $white !important; }
 .top-bar { background: $black; @include opacity(0.8); }
