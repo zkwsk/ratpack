@@ -23,12 +23,12 @@
   position: relative;
   height: 100px;
   width: 100%;
-  background: transparent url("../images/ornament.png") no-repeat center center;
+  background: transparent url("/images/ornament.png") no-repeat center center;
   background-size: 100%;
 }
 .ornament-dark {
   @extend .ornament;
-  background: transparent url("../images/ornament-dark.png") no-repeat center center;
+  background: transparent url("/images/ornament-dark.png") no-repeat center center;
 }
 
 .scroll {
