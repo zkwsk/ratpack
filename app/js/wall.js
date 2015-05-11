@@ -1,5 +1,6 @@
 'use strict';
 /* global freewall*/
+/* global Modernizr*/
 
 $(function() {
   var wall = new freewall('#freewall');
@@ -22,46 +23,28 @@ $(function() {
       return $(this[randomIndex]);
   };
 
-  // jQuery.fn.swapWith = function(to) {
-  //     return this.each(function() {
-  //         var copy_to = $(to).clone(true);
-  //         var copy_from = $(this).clone(true);
-  //         $(to).replaceWith(copy_from);
-  //         $(this).replaceWith(copy_to);
-  //     });
-  // };
-
-
-  // function swap_images() {
-  //   var $i = $('[class*=square]');
-
-  //   var $this = $i.random();
-  //   var $rand = $i.not($this).random();
-  //   $this.swapWith($rand);
-  //   $i = $('[class*=square]');
-
-
-  //   setTimeout(swap_images, 750 );
-  // }
-
-  // swap_images();
-
-  var $i = $('#freewall i');
+  var $freewall = $('#freewall');
+  var $i = $freewall.find('i');
 
   $.each($i, function(index, item){
     var $item = $(item);
     var $filename = $item.attr('class').replace('tile-','');
     var $title = $item.find('.text-bottom > *').text();
-    $item.wrap('<a rel="band" href="/images/tiles/large/' + $filename + '.jpg" class="fancybox" title="' + $title  + '"></a>');
-  });
-
-  $('.fancybox').fancybox({
-    helpers: {
-      overlay: {
-        locked: false
-      }
+    if ( !(Modernizr.touch) ){
+      $item.wrap('<a rel="band" href="/images/tiles/large/' + $filename + '.jpg" class="fancybox" title="' + $title  + '"></a>');
     }
   });
+
+  if ( !(Modernizr.touch) ){
+    $('.fancybox').fancybox({
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+    });
+    
+  }
 
 
 });
