@@ -61,6 +61,11 @@
   @include transform(skew(0, -2deg));
 }
 
+.fb-page {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .fade-white {
   color: $white!important;
   /* First we need to help some browsers along for this to work.

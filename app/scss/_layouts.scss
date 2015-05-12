@@ -94,6 +94,12 @@ body {
   @extend .bg-black;
 }
 
+// News page.
+.page-news {
+  @extend .bg-white;
+}
+
+
 // Repertoire page.
 .page-repertoire {
   @extend .bg-white;

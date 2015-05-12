@@ -16,8 +16,15 @@ img.hide-for-small-only.prev.scroll(src="images/scroll-up.png", alt="scroll")
           a(href="#" data-link='.page-categories') Musikken
         li
           a(href="#" data-link='.page-gallery') Billeder
+          li
+            a(href='#', data-reveal-id='myFacebookModal')
+              i.fa.fa-facebook.facebook-blue
+            #myFacebookModal.reveal-modal.small(data-reveal='', aria-hidden='true', role='dialog')
+              include facebook.html
+
         li
-          a(href="#" data-link='.page-repertoire') Repertoire
-        li
-          a(href="#" data-link='.page-contact') Kontakt
+          a(href='#', data-reveal-id='myModal')
+            i.fa.fa-envelope
+          #myModal.reveal-modal.small(data-reveal='', aria-hidden='true', role='dialog')
+            include foxy-form.html
       include theme-picker
