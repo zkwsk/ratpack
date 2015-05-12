@@ -17,7 +17,9 @@
         .columns.small-7.small-centered
           .ornament
         .intro-text
-          include:markdown ../pages/intro-text.md
+          p
+            - gpOutput::Get('Extra','intro');
+            - $page->GetContent();
     .skyline-container
       img.skyline(src="images/skyline_long.svg", alt="skyline")
         
