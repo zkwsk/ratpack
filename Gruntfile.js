@@ -197,10 +197,33 @@ module.exports = function(grunt) {
 		    //for example this 
 		    // 'Bad value “” for attribute “action” on element “form”: Must be non-empty.'
 		  ]
+		},
+
+		jadephp: {
+			views: {
+			    options: {
+			        pretty: false,
+			        filename: 'default',
+			        basedir: '<%= app %>/'
+			    }
+				},  
+		  compile: {
+		  	options: {
+		  	    pretty: true,
+		  	    filename: 'default',
+		  	    basedir: __dirname
+		  	},
+		    expand: true,
+		    cwd: '<%= app %>/',
+		    src: ['*.jade'],
+		    dest: '<%= dist %>/',
+		    ext: '.php'
+		  }
 		}
 
 	});
 	
+	grunt.loadNpmTasks('grunt-jade-php');
 	grunt.loadNpmTasks('grunt-lint5');
 	grunt.registerTask('compile-jade', ['jade']);
 	grunt.registerTask('lint-html', ['jade', 'lint5']);
