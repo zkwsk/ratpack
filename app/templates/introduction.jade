@@ -4,8 +4,7 @@
     img.stars-middle(src="images/stars_middle.png", alt="stars")
     img.stars-low(src="images/stars_low.png", alt="stars")
     .row.green
-      .columns.small-9.small-centered
-        br
+      .columns.small-9.small-centered.text-center
         br
         .bigtext.logo-container
           span 
@@ -16,6 +15,7 @@
         h2.intro RATPACK + LINDY HOP
         .columns.small-7.small-centered
           .ornament
+        a(class='button success round' href='#', data-link='.page-contact') Book High T Band!
         .intro-text
           p
             - gpOutput::Get('Extra','intro');

@@ -36,7 +36,7 @@ $(function(){
     //menu
     var sel;
     var offset;
-    $('.top-bar .right a').click(function(event){
+    $('.top-bar .right a, .city-livery a').click(function(event){
         event.preventDefault();
         sel =  $($(this).attr('data-link'));
         console.log(Foundation.utils.is_small_only());
