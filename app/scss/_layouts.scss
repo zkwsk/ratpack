@@ -91,7 +91,7 @@ body {
 
 // Gallery page.
 .page-gallery {
-  @extend .bg-black;
+  @extend .bg-white;
 }
 
 // News page.
@@ -99,10 +99,9 @@ body {
   @extend .bg-white;
 }
 
-
 // Repertoire page.
 .page-repertoire {
-  @extend .bg-white;
+  @extend .bg-black;
 }
 
 .page-contact {

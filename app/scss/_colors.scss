@@ -11,7 +11,7 @@ $color-text-alternate: $black;
 
 // Background fills colors.
 .bg-accent {
-  @include set-txt-color($color-text-alternate);
+  @include set-txt-color($color-text-body);
   background-color: $color-accent;
 }
 .bg-primary {
