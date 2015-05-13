@@ -4,84 +4,13 @@
 @import "compass/utilities";
 @import "fonts";
 @import "util";
-body.alternate-theme-0 {  
-  @import "palette";
-  @import "mixins";
-  @import "colors";
-  @import "freewall";
-
-  @import "layouts";
-  @import "widgets";
-  @import "states";
-  @import "wall";
   
-}
+@import "palette";
+@import "mixins";
+@import "colors";
+@import "freewall";
 
-body.alternate-theme-1 {  
-  @import "mixins";
-  @import "generated-colors01";
-  @import "alternate-colors";
-  @import "freewall";
-
-  @import "layouts";
-  @import "widgets";
-  @import "states";
-  @import "wall";
-  
-}
-
-
-body.alternate-theme-2 {  
-  @import "mixins";
-  @import "generated-colors02";
-  @import "alternate-colors";
-  @import "freewall";
-
-  @import "layouts";
-  @import "widgets";
-  @import "states";
-  @import "wall";
-  
-}
-
-
-body.alternate-theme-3 {  
-  @import "mixins";
-  @import "generated-colors03";
-  @import "alternate-colors";
-  @import "freewall";
-
-  @import "layouts";
-  @import "widgets";
-  @import "states";
-  @import "wall";
-  
-}
-
-
-body.alternate-theme-4 {  
-  @import "mixins";
-  @import "generated-colors04";
-  @import "alternate-colors";
-  @import "freewall";
-
-  @import "layouts";
-  @import "widgets";
-  @import "states";
-  @import "wall";
-  
-}
-
-
-body.alternate-theme-5 {  
-  @import "mixins";
-  @import "generated-colors05";
-  @import "alternate-colors";
-  @import "freewall";
-
-  @import "layouts";
-  @import "widgets";
-  @import "states";
-  @import "wall";
-  
-}
+@import "layouts";
+@import "widgets";
+@import "states";
+@import "wall";
