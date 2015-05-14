@@ -1,6 +1,7 @@
 'use strict';
 /* global freewall*/
 /* global Modernizr*/
+/* global Foundation */
 
 $(function() {
   var wall = new freewall('#freewall');

@@ -12,7 +12,7 @@ body {
 
 // Styling all page layouts.
 [class^="page-"] {
-  min-height: 900px;
+  // min-height: 900px;
   position: relative;
   // padding-bottom: 10px;
 }
@@ -23,7 +23,7 @@ body {
   .city-livery {
     // margin-top: -44px;
     overflow: hidden;
-    height: 900px;
+    // height: 900px;
     position: relative;
     z-index: 0;
     @include set-txt-color($color-text-body);

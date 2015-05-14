@@ -55,15 +55,10 @@
   // padding-top: 100px;
   position: absolute;
   background-color:inherit;
-  height: 100px;
+  height: 4em;
   width: 100%;
-  // top: -40px;
+  top: -40px;
   @include transform(skew(0, -2deg));
-}
-
-.fb-page {
-  width: 100%;
-  margin: 0 auto;
 }
 
 
