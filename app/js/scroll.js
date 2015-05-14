@@ -39,7 +39,6 @@ $(function(){
     $('.top-bar .right a, .city-livery a').click(function(event){
         event.preventDefault();
         sel =  $($(this).attr('data-link'));
-        console.log(Foundation.utils.is_small_only());
         offset = Foundation.utils.is_small_only() ? -263 : 0;
         $('body').scrollTo( sel, 800, { offset: offset });
     });

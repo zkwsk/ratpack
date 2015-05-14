@@ -1,15 +1,14 @@
 'use strict';
 /* global freewall*/
 /* global Modernizr*/
-/* global Foundation */
 
 $(function() {
   var wall = new freewall('#freewall');
 
   wall.reset({
     selector: '.level1',
-    cellW: 320,
-    cellH: 160,
+    cellW: 160,
+    cellH: 80,
     fixSize: 0,
     gutterX: 20,
     gutterY: 10,
