@@ -3,20 +3,20 @@
     img.stars-high(src="images/stars_high.png", alt="stars")
     img.stars-middle(src="images/stars_middle.png", alt="stars")
     img.stars-low(src="images/stars_low.png", alt="stars")
-    .row.green
-      .columns.small-9.small-centered.text-center
-        br
-        .bigtext.logo-container
-          span 
-            h1.logo HIGH T BAND
+    .row
+      br.hide-for-small-only
+      .columns.small-9.small-centered
+        .logo-container.text-center.bigtext.logo
+          span HIGH T BAND
         h2.subtitle
           i Autentiske bigbandoplevelser
-          br
+          br.hide-for-small-only
         h2.intro RATPACK + LINDY HOP
         .columns.small-7.small-centered
-          .ornament
-        a(class='button success round' href='#', data-link='.page-contact') Book High T Band!
-        .intro-text
+          .ornament.hide-for-small-only
+        .text-center
+          a(class='button success round' href='#', data-link='.page-contact') Book High T Band!
+        .intro-text.text-left
           p
             - gpOutput::Get('Extra','intro');
     .skyline-container
