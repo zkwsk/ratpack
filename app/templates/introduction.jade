@@ -1,8 +1,6 @@
 .page-introduction
   .city-livery
-    img.stars-high(src="images/stars_high.png", alt="stars")
-    img.stars-middle(src="images/stars_middle.png", alt="stars")
-    img.stars-low(src="images/stars_low.png", alt="stars")
+    img.stars-high(src="images/stars_all.png", alt="stars")
     .text-right
       .fb-like(data-href='https://hightband.dk', data-layout='button_count', data-action='like', data-show-faces='true', data-share='true')
     .row
@@ -18,8 +16,7 @@
         .text-center
           a(class='button success round' href='#', data-link='.page-contact') Book High T Band!
         .intro-text.text-left
-          p
-            - gpOutput::Get('Extra','intro');
+          - gpOutput::Get('Extra','intro');
     br
     br
     br
