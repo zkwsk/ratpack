@@ -50,11 +50,11 @@ $tile-list: "1x2-bass1" "1x2-singer1" "1x2-singer2" "2x1-alto1" "2x1-sheetmusic"
     color: white;
   }
 
-  .item:hover i {
+  .item:hover figure {
     border:0;
   }
 
-  .item:hover i{
+  .item:hover figure{
     @include filter(grayscale(100%));
     border: 4px solid $color-primary-dark;
   }

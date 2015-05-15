@@ -24,7 +24,7 @@ $(function() {
   };
 
   var $freewall = $('#freewall');
-  var $i = $freewall.find('i');
+  var $i = $freewall.find('figure');
 
   $.each($i, function(index, item){
     var $item = $(item);
