@@ -2,7 +2,7 @@ head
   meta(charset="utf-8")
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  
+  include opengraph.html
   - gpOutput::GetHead();
 
   link(rel="icon", href="images/favicon.ico", type="image/x-icon")
@@ -29,3 +29,4 @@ head
   // build:js js/vendor/modernizr.min.js
   script(src="bower_components/modernizr/modernizr.js")
   // endbuild
+  include microdata.html
