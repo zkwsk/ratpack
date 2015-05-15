@@ -206,12 +206,11 @@ module.exports = function(grunt) {
 		    'username': 'abcd'
 		  },
 		  templates: [
-		    'index.html'
+		    'template.php'
 		  ],
 		  ignoreList: [
 		    // the format of ignoreList is in the array format 
-		    'message to be ignored',
-		    'another message'
+		    'Saw “<?”. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)'
 		    // you can simply copy the message you got from the returned on the console 
 		    //for example this 
 		    // 'Bad value “” for attribute “action” on element “form”: Must be non-empty.'
