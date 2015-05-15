@@ -4,6 +4,8 @@
     img.stars-high(src="images/stars_high.png", alt="stars")
     img.stars-middle(src="images/stars_middle.png", alt="stars")
     img.stars-low(src="images/stars_low.png", alt="stars")
+    .text-right
+      .fb-like(data-href='https://hightband.dk', data-layout='button_count', data-action='like', data-show-faces='true', data-share='true')
     .row
       br.hide-for-small-only
       .columns.small-9.small-centered
@@ -20,8 +22,6 @@
         .intro-text.text-left
           p
             - gpOutput::Get('Extra','intro');
-        .text-left
-          .fb-like(data-href='https://hightband.dk', data-layout='button_count', data-action='like', data-show-faces='true', data-share='true')
     br
     br
     br
