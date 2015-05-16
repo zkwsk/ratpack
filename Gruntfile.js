@@ -147,7 +147,8 @@ module.exports = function(grunt) {
 				tasks: ['sass']
 			},
 			jade: {
-				files: ['<%= app %>/**/*.jade', '<%= app %>/templates/**/*.jade','<%= app %>/pages/**/*.md'],
+				files: [	'<%= app %>/**/*.jade', '<%= app %>/templates/**/*.jade','<%= app %>/pages/**/*.md',
+									'<%= app %>/**/*.html', '<%= app %>/templates/**/*.html'],
 				tasks: ['jadephp']
 			},
 			livereload: {
