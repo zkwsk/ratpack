@@ -1,27 +1,27 @@
 img.hide-for-small-only.next.scroll(src="images/scroll.png", alt="scroll")
 .fixed
-  nav.top-bar(data-topbar, role='navigation')
+  nav.top-bar(data-topbar, role='navigation .row')
     ul.title-area
       li.name
       li.toggle-topbar.menu-icon
-        a(href='#')
+        a(href='# .row')
           span
     .top-bar-section
       ul.right
         li
-          a(href="#" data-link='.page-introduction') 
+          a(href="#" data-link='.page-introduction .row') 
             i.fa.fa-chevron-up
         li
-          a(href="#" data-link='.page-categories') Ratpack+Lindyhop
+          a(href="#" data-link='.page-categories .row') Ratpack+Lindyhop
         li
-          a(href="#" data-link='.page-gallery') Billeder
+          a(href="#" data-link='.page-gallery .row') Billeder
         li
-          a(href="#" data-link='.page-music') Lyd        
+          a(href="#" data-link='.page-music .row') Lyd        
         //- li
-        //-   a(href="#" data-link='.page-video') Video
+        //-   a(href="#" data-link='.page-video .row') Video
         //- li.show-for-medium-up
-        //-   a(href='#', data-link='.page-social')
+        //-   a(href='#', data-link='.page-social .row')
         //-     i.fa.fa-facebook.facebook-blue
         li
-          a(href='#', data-link='.page-contact') Kontakt
+          a(href='#', data-link='.page-contact .row') Kontakt
       //- include theme-picker
