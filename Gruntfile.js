@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: '<%= app %>/',
-					src: ['**/*.jade', '!**/templates/**'],
+					src: ['**/template.jade', '!**/templates/**'],
 					ext: '.php',
 					dest: '<%= app %>/'
 				}]
@@ -64,10 +64,10 @@ module.exports = function(grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: '<%= app %>/',
+					cwd: '<%= app %>/interchange',
 					src: ['**/*.jade', '!**/templates/**'],
-					ext: '.php',
-					dest: '<%= app %>/'
+					ext: '.html',
+					dest: '<%= app %>/templates/interchange'
 				}]
 			}
 		},
@@ -149,10 +149,10 @@ module.exports = function(grunt) {
 			jade: {
 				files: [	'<%= app %>/**/*.jade', '<%= app %>/templates/**/*.jade','<%= app %>/pages/**/*.md',
 									'<%= app %>/**/*.html', '<%= app %>/templates/**/*.html'],
-				tasks: ['jadephp']
+				tasks: ['jade','jadephp']
 			},
 			livereload: {
-				files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}','<%= app %>/pages/**/*.md'],
+				files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/interchange/**/*.html', '<%= app %>/css/**/*.css', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}','<%= app %>/pages/**/*.md'],
 				options: {
 					livereload: true
 				}
@@ -244,8 +244,8 @@ module.exports = function(grunt) {
 	
 	grunt.loadNpmTasks('grunt-jade-php');
 	grunt.loadNpmTasks('grunt-lint5');
-	grunt.registerTask('compile-jade', ['jadephp']);
-	grunt.registerTask('lint-html', ['jadephp', 'lint5']);
+	grunt.registerTask('compile-jade', [ 'jade','jadephp']);
+	grunt.registerTask('lint-html', ['jade','jadephp', 'lint5']);
 	grunt.loadNpmTasks('grunt-favicons');
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
