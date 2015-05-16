@@ -60,11 +60,6 @@ $tile-list: "1x2-bass1" "1x2-singer1" "1x2-singer2" "2x1-alto1" "2x1-sheetmusic"
   }
 }
 
-#load {
-  z-index: 2;
-  position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  
+#freewall figure {
+  margin:0;
 }
