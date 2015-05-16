@@ -3,7 +3,6 @@ node_modules
 app/bower_components
 app/css
 .sass-cache
-*.html
 *.php
 dist
 app/scss/_generated-colors.scss
