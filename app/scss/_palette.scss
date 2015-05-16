@@ -1,5 +1,5 @@
 // Base color palette.
-$red: rgb(253, 78, 78); // #fd4e4e
+$red: desaturate(rgb(253, 78, 78), 5%);
 $nileblue: rgb(25, 70, 83); // #194653
 $blackcurrant: darken(rgb(47, 42, 56), 10%); // #2f2a38
 $black: rgb(26, 23, 31); // #1a171f
