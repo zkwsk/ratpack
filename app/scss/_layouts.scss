@@ -94,12 +94,12 @@ body {
 }
 
 .page-video {
-  @extend .bg-primary;
+  @extend .bg-black;
   padding-bottom: 5em;
 }
 
 .page-music {
-  @extend .bg-black;
+  @extend .bg-primary;
   padding-bottom: 5em;
 }
 
