@@ -1,16 +1,14 @@
 .page-categories
   .skew.hide-for-small-only
-  .category-widgets
-    br.hide-for-small-only
-    .row
-      .columns.small-12.small-centered.clearfix
-        h2 Ratpack + Lindyhop
-        .columns.small-8.medium-5.small-centered
-          .ornament.hide-for-small-only
-        br
-        br
-        .columns.small-12.medium-6.category-widget
-          include ratpack
-        .columns.small-12.medium-6.category-widget
-          include lindyhop
-        - gpOutput::Get('Extra','more-about-categories');
+  .row
+    .columns.small-12.small-centered.clearfix
+      h2 Ratpack + Lindyhop
+      .columns.small-8.medium-5.small-centered
+        .ornament.hide-for-small-only
+      br
+      br
+      .columns.small-12.medium-6.category-widget
+        include ratpack
+      .columns.small-12.medium-6.category-widget
+        include lindyhop
+      - gpOutput::Get('Extra','more-about-categories');

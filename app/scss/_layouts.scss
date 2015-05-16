@@ -10,7 +10,7 @@ body {
   }
 }
 
-[class^="page-"] {
+[class^="page-"]:not(.page-introduction) {
   padding-top: 2em;
   position: relative;
 }
