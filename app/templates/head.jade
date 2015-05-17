@@ -26,10 +26,12 @@ head
   link(rel="stylesheet", href="css/app_override.css")
   link(rel="stylesheet", href="scratch/scratch.css")
   // endbuild
-
   - gpOutput::GetHead();
-  
   // build:js js/vendor/modernizr.min.js
-  script(src="bower_components/modernizr/modernizr.js")
+    script(src="bower_components/modernizr/modernizr.js")
   // endbuild
+  //if lt IE 9
+    script(src='//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js')
+  // 
   include microdata.html
