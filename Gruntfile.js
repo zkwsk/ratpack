@@ -30,7 +30,8 @@ module.exports = function(grunt) {
 					quiet: true
 				},
 				files: {
-					'<%= app %>/css/app.css': '<%= app %>/scss/app.scss'
+					'<%= app %>/css/app.css': '<%= app %>/scss/app.scss',
+					'<%= app %>/css/ie.css': '<%= app %>/scss/ie.scss',
 				}
 			}
 		},
