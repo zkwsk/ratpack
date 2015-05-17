@@ -48,8 +48,8 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: '<%= app %>/',
-					src: ['**/template.jade', '!**/templates/**'],
-					ext: '.php',
+					src: ['**/index.jade', '!**/templates/**'],
+					ext: '.html',
 					dest: '<%= app %>/'
 				}]
 			}
@@ -124,14 +124,14 @@ module.exports = function(grunt) {
 		},
 
 		useminPrepare: {
-			html: ['<%= app %>/template.php'],
+			html: ['<%= app %>/index.html'],
 			options: {
 				dest: '<%= dist %>'
 			}
 		},
 
 		usemin: {
-			html: [ '<%= dist %>/**/*.php', '!<%= app %>/bower_components/**'],
+			html: [ '<%= dist %>/**/*.html', '!<%= app %>/bower_components/**'],
 			css: ['<%= dist %>/css/**/*.css'],
 			options: {
 				dirs: ['<%= dist %>']
@@ -148,8 +148,8 @@ module.exports = function(grunt) {
 				tasks: ['sass']
 			},
 			jade: {
-				files: [	'<%= app %>/**/*.jade', '<%= app %>/templates/**/*.jade','<%= app %>/pages/**/*.md',
-									'<%= app %>/**/*.html', '<%= app %>/templates/**/*.html'],
+				files: [	'<%= app %>/**/*.jade', '<%= app %>/templates/**/*.jade',
+									'<%= app %>/templates/**/*.html'],
 				tasks: ['jade','jadephp']
 			},
 			livereload: {
@@ -208,7 +208,7 @@ module.exports = function(grunt) {
 		    'username': 'abcd'
 		  },
 		  templates: [
-		    'template.php'
+		    'index.html'
 		  ],
 		  ignoreList: [
 		    // the format of ignoreList is in the array format 
