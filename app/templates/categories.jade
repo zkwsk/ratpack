@@ -1,17 +1,14 @@
 .page-categories
-  .skew
-  .category-widgets
-    br
-    br
-    .row
-      .columns.small-12.small-centered.clearfix
-        h2 Musikken
-        br
-        .columns.small-12.medium-6.bg-primary.category-widget
-          include ratpack
-        .columns.small-12.medium-6.bg-primary.category-widget
-          include lindyhop
-  br
-  include:markdown ../pages/categories.md
-  br
-  br
+  .skew.hide-for-small-only
+  .row
+    .columns.small-12.small-centered.clearfix
+      h2 Ratpack + Lindyhop
+      .columns.small-8.medium-5.small-centered
+        .ornament.hide-for-small-only
+      br
+      br
+      .columns.small-12.medium-6.category-widget
+        include ratpack
+      .columns.small-12.medium-6.category-widget
+        include lindyhop
+      p.editable Dette kan redigeres...

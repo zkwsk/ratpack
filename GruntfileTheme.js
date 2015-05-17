@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		app: 'app',
-		dist: 'dist',
+		dist: '/Users/troelsbusk/Projects/stagingGpeasy/themes/ratpack',
 
 		favicons: {
 		  options: {
@@ -30,8 +30,7 @@ module.exports = function(grunt) {
 					quiet: true
 				},
 				files: {
-					'<%= app %>/css/app.css': '<%= app %>/scss/app.scss',
-					'<%= app %>/css/ie.css': '<%= app %>/scss/ie.scss',
+					'<%= app %>/css/app.css': '<%= app %>/scss/app.scss'
 				}
 			}
 		},
@@ -48,8 +47,8 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: '<%= app %>/',
-					src: ['**/index.jade', '!**/templates/**'],
-					ext: '.html',
+					src: ['**/template.jade', '!**/templates/**'],
+					ext: '.php',
 					dest: '<%= app %>/'
 				}]
 			}
@@ -124,14 +123,14 @@ module.exports = function(grunt) {
 		},
 
 		useminPrepare: {
-			html: ['<%= app %>/index.html'],
+			html: ['<%= app %>/template.php'],
 			options: {
 				dest: '<%= dist %>'
 			}
 		},
 
 		usemin: {
-			html: [ '<%= dist %>/**/*.html', '!<%= app %>/bower_components/**'],
+			html: [ '<%= dist %>/**/*.php', '!<%= app %>/bower_components/**'],
 			css: ['<%= dist %>/css/**/*.css'],
 			options: {
 				dirs: ['<%= dist %>']
@@ -148,8 +147,8 @@ module.exports = function(grunt) {
 				tasks: ['sass']
 			},
 			jade: {
-				files: [	'<%= app %>/**/*.jade', '<%= app %>/templates/**/*.jade',
-									'<%= app %>/templates/**/*.html'],
+				files: [	'<%= app %>/**/*.jade', '<%= app %>/templates/**/*.jade','<%= app %>/pages/**/*.md',
+									'<%= app %>/**/*.html', '<%= app %>/templates/**/*.html'],
 				tasks: ['jade','jadephp']
 			},
 			livereload: {
@@ -208,7 +207,7 @@ module.exports = function(grunt) {
 		    'username': 'abcd'
 		  },
 		  templates: [
-		    'index.html'
+		    'template.php'
 		  ],
 		  ignoreList: [
 		    // the format of ignoreList is in the array format 
@@ -255,6 +254,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	
-	grunt.registerTask('publish', ['compile-jade', 'compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin', 'favicons']);
+	grunt.registerTask('publish', ['compile-jade', 'compile-sass', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin', 'favicons']);
 
 };

@@ -3,8 +3,9 @@ node_modules
 app/bower_components
 app/css
 .sass-cache
-*.html
+*.php
 dist
 app/scss/_generated-colors.scss
 scratch.css
-app/template.php
+app/index.html
+app/templates/interchange

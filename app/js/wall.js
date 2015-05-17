@@ -7,8 +7,8 @@ $(function() {
 
   wall.reset({
     selector: '.level1',
-    cellW: 320,
-    cellH: 160,
+    cellW: 160,
+    cellH: 80,
     fixSize: 0,
     gutterX: 20,
     gutterY: 10,
@@ -24,7 +24,7 @@ $(function() {
   };
 
   var $freewall = $('#freewall');
-  var $i = $freewall.find('i');
+  var $i = $freewall.find('figure');
 
   $.each($i, function(index, item){
     var $item = $(item);

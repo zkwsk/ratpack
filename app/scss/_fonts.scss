@@ -45,15 +45,13 @@ body {
   }
 }
 
-h1 {
+.logo {
   font-family: 'Lovelo Line Light', 'LoveLineLight';
-  text-align: center;
-  font-size: 3em;
 }
 
 
 h2, h3, h4, h5 {
-  font-family: 'Playfair Display Italic';
+  font-family: 'Lovelo Black';
   text-align: center;
 }
 
@@ -69,7 +67,7 @@ h2.intro {
 
 
 h2.subtitle {
-  font-family: 'Playfair Display Italic';
+  font-family: 'Playfair Display Italic', Georgia, serif;
 }
 
 .send-mail,

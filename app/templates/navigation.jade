@@ -1,5 +1,4 @@
 img.hide-for-small-only.next.scroll(src="images/scroll.png", alt="scroll")
-img.hide-for-small-only.prev.scroll(src="images/scroll-up.png", alt="scroll")
 .fixed
   nav.top-bar(data-topbar, role='navigation')
     ul.title-area
@@ -7,17 +6,22 @@ img.hide-for-small-only.prev.scroll(src="images/scroll-up.png", alt="scroll")
       li.toggle-topbar.menu-icon
         a(href='#')
           span
-    section.top-bar-section
+    .top-bar-section
       ul.right
         li
-          a(href="#" data-link='.page-introduction') 
+          a(href="#" data-link='.page-introduction .row') 
             i.fa.fa-chevron-up
         li
-          a(href="#" data-link='.page-categories') Musikken
+          a(href="#" data-link='.page-categories .row') Ratpack+Lindyhop
         li
-          a(href="#" data-link='.page-gallery') Billeder
+          a(href="#" data-link='.page-gallery .row') Billeder
         li
-          a(href="#" data-link='.page-repertoire') Repertoire
+          a(href="#" data-link='.page-music .row') Lyd        
+        //- li
+        //-   a(href="#" data-link='.page-video .row') Video
+        //- li.show-for-medium-up
+        //-   a(href='#', data-link='.page-social .row')
+        //-     i.fa.fa-facebook.facebook-blue
         li
-          a(href="#" data-link='.page-contact') Kontakt
-      include theme-picker
+          a(href='#', data-link='.page-contact .row') Kontakt
+      //- include theme-picker

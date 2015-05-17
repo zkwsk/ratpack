@@ -10,20 +10,16 @@ body {
   }
 }
 
-// Styling all page layouts.
-[class^="page-"] {
-  min-height: 900px;
+[class^="page-"]:not(.page-introduction) {
+  padding-top: 2em;
   position: relative;
-  padding-bottom: 10px;
 }
 
 // Introduction page.
 .page-introduction {
 
   .city-livery {
-    margin-top: -44px;
     overflow: hidden;
-    height: 900px;
     position: relative;
     z-index: 0;
     @include set-txt-color($color-text-body);
@@ -35,12 +31,10 @@ body {
       margin: auto;
     }
 
-    // Styling 3 different layers of stars.
     > img[class^="stars"] {
       position: absolute;
       top: 0;
 
-      // Controlling layers individually...
       &[class*="-high"] {
         opacity: 0.51;
       }
@@ -55,8 +49,6 @@ body {
     .logo-container {
       width: 100%;
       margin: 0 auto;
-      padding-top: 60px;
-
       .logo {
         width: 100%;
       }
@@ -84,21 +76,37 @@ body {
   }
 }
 
-// Categories page.
 .page-categories {
   @extend .bg-primary;
 }
 
-// Gallery page.
 .page-gallery {
-  @extend .bg-black;
-}
-
-// Repertoire page.
-.page-repertoire {
   @extend .bg-white;
 }
 
+.page-news {
+  @extend .bg-white;
+}
+
+.page-video iframe,
+.page-music iframe {
+  padding-bottom: 2em;
+  border:0;
+}
+
+.page-video {
+  @extend .bg-primary;
+  padding-bottom: 5em;
+}
+
+.page-music {
+  @extend .bg-black;
+  padding-bottom: 5em;
+}
+
+.footer {
+  @extend .bg-black;
+}
 .page-contact {
   @extend .bg-accent;
 }

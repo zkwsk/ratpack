@@ -36,11 +36,10 @@ $(function(){
     //menu
     var sel;
     var offset;
-    $('.top-bar .right a').click(function(event){
+    $('.top-bar .right a, .city-livery a').click(function(event){
         event.preventDefault();
         sel =  $($(this).attr('data-link'));
-        console.log(Foundation.utils.is_small_only());
-        offset = Foundation.utils.is_small_only() ? -263 : 0;
+        offset = Foundation.utils.is_small_only() ? -310 : -85;
         $('body').scrollTo( sel, 800, { offset: offset });
     });
 

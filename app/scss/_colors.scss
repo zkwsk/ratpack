@@ -11,7 +11,7 @@ $color-text-alternate: $black;
 
 // Background fills colors.
 .bg-accent {
-  @include set-txt-color($color-text-alternate);
+  @include set-txt-color($color-text-body);
   background-color: $color-accent;
 }
 .bg-primary {
@@ -41,4 +41,8 @@ $color-text-alternate: $black;
 
 .blue {
   color: $nileblue;
+}
+
+.facebook-blue {
+  color: lighten(#3b5998,20%);
 }

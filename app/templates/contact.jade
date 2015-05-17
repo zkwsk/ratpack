@@ -1,14 +1,22 @@
 .page-contact
-  .skew
+  .skew.hide-for-small-only
   .row
-    .colums.small-12.small-centered
-      br
-      br
+    .colums.small-12.small-centered.text-center
       h2 Kontakt
-      .columns.small-centered.small-12.text-center
-        h3 BESKED TIL HIGH T
-        //- i.fa.fa-hand-o-down.fa-3x.dark
-        a.fade-white(href='#', data-reveal-id='myModal')
-          i.fa.fa-envelope.fa-5x
-        #myModal.reveal-modal.small(data-reveal='', aria-labelledby='modalTitle', aria-hidden='true', role='dialog')
-          include foxy-form.html
+      .columns.small-8.medium-5.small-centered
+        .ornament.hide-for-small-only
+
+    .colums.small-12.small-centered
+      .columns.small-12.medium-7.small-centered.text-center
+        p
+          strong Benny Nielsen : 
+          a(href="tel:23839090")
+            i.fa.fa-phone  23839090 
+        p
+          strong Jacob Søborg Andersen : 
+          a(href="tel:30338122")
+            i.fa.fa-phone  30338122 
+        p
+          strong Mail : 
+          include mail-link.html
+    br

@@ -1,0 +1,10 @@
+.page-video
+  .skew.hide-for-small-only
+  .row
+    .columns.small-12.text-center
+      h2 Video
+      .columns.small-8.medium-5.small-centered
+        .ornament.hide-for-small-only
+      br.hide-for-small-only
+      div(data-interchange="[templates/interchange/youtube-link.html, (small)], [templates/interchange/youtube-playlist.html, (medium)], [templates/interchange/youtube-playlist.html, (large)]")
+        include interchange/youtube-link.html
