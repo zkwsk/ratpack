@@ -1,0 +1,36 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  ^/index\.php$
+RewriteCond %{QUERY_STRING} ^pageid=([a-zA-Z0-9_]*)$ [OR]
+RewriteCond %{QUERY_STRING} ^pageid=([a-zA-Z0-9_]*)&extramenu=([a-zA-Z0-9_]*)$ [OR]
+RewriteCond %{QUERY_STRING} ^pageid=([a-zA-Z0-9_]*)&page=([a-zA-Z0-9_]*)$ [OR]
+RewriteCond %{QUERY_STRING} ^extramenu=([a-zA-Z0-9_]*)&pageid=([a-zA-Z0-9_]*)$
+RewriteRule ^(.*)$ http://www.hightband.dk? [R=302,L]
+
+RewriteCond %{REQUEST_URI}  ^/sinatra/index\.php$
+RewriteCond %{QUERY_STRING} ^pageid=([a-zA-Z0-9_]*)$
+RewriteRule ^(.*)$ http://www.hightband.dk? [R=302,L]
+
+
+
+AddType application/x-javascript .js
+AddType text/css .css
+AddType text/xml .xml
+
+AcceptPathInfo On
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
