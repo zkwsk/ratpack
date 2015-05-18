@@ -4,5 +4,5 @@
 /* global skrollr */
 
 if (Foundation.utils.is_medium_up()){
-  var s = skrollr.init();
+  skrollr.init({forceHeight: false});
 }
