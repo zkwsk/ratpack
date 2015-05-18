@@ -1,0 +1,37 @@
+head
+  meta(charset="utf-8")
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  include opengraph.html
+  title 404 SIDEN BLEV IKKE FUNDET
+  
+  link(rel="icon", href="images/favicon.ico", type="image/x-icon")
+  link(rel="icon", type="image/png" href="images/favicon.png", sizes="64x64")
+  link(rel='apple-touch-icon', sizes='57x57', href='images/apple-touch-icon-57x57-precomposed.png')
+  link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114-precomposed.png')
+  link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72-precomposed.png')
+  link(rel='apple-touch-icon', sizes='144x144', href='images/apple-touch-icon-144x144-precomposed.png')
+  link(rel='apple-touch-icon', sizes='60x60', href='images/apple-touch-icon-60x60-precomposed.png')
+  link(rel='apple-touch-icon', sizes='120x120', href='images/apple-touch-icon-120x120-precomposed.png')
+  link(rel='apple-touch-icon', sizes='76x76', href='images/apple-touch-icon-76x76-precomposed.png')
+  link(rel='apple-touch-icon', sizes='152x152', href='images/apple-touch-icon-152x152-precomposed.png')
+  // build:css css/libraries.min.css
+  link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.css")
+  link(rel="stylesheet", href="bower_components/fancybox/source/jquery.fancybox.css")
+  // bower:css
+  // endbower
+  // endbuild
+  // build:css css/app.min.css
+  link(rel="stylesheet", href="css/app.css")
+  link(rel="stylesheet", href="css/app_override.css")
+  link(rel="stylesheet", href="scratch/scratch.css")
+  // endbuild
+  // build:js js/vendor/modernizr.min.js
+  script(src="bower_components/modernizr/modernizr.js")
+  // endbuild
+  //if lt IE 9
+    script(src='//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js')
+    link(rel="stylesheet", href="css/ie.css")
+  // 
+  include microdata.html
