@@ -243,6 +243,7 @@ module.exports = function(grunt) {
 
 	});
 	
+	grunt.loadNpmTasks('grunt-notify');
 	grunt.loadNpmTasks('grunt-jade-php');
 	grunt.loadNpmTasks('grunt-lint5');
 	grunt.registerTask('compile-jade', [ 'jade','jadephp']);
