@@ -9,3 +9,4 @@ app/scss/_generated-colors.scss
 scratch.css
 app/index.html
 app/templates/interchange
+app/404.html
