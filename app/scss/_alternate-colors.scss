@@ -2,6 +2,7 @@
 
 @import "compass/css3";
 @import "compass/utilities";
+@import "generated-colors";
 
 // Custom import statements here.
 @import "mixins";
@@ -51,7 +52,7 @@ $color-text-alternate: $black;
 }
 
 .red {
-  color: $red; 
+  color: $red;
 }
 
 .blue {
